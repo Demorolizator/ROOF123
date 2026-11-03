@@ -1,0 +1,99 @@
+{
+  "version": "0.8",
+  "roof_type": "Сложная / по точкам",
+  "parameters": {
+    "name": "Пример — Г-образный дом с ВШ",
+    "length": "20",
+    "width": "14",
+    "eave": "0.6",
+    "side": "7.3",
+    "end": "7.3",
+    "rafter_step": "1.0",
+    "rafter_size": "50×200",
+    "lath_step": "0.4",
+    "lath_size": "50×150",
+    "cover": "Профлист",
+    "eave_height": "0.4",
+    "ridge_height": "3.25",
+    "complex_pitch": "28.0"
+  },
+  "objects": [],
+  "outline": {
+    "enabled": true,
+    "points": [
+      [
+        0,
+        0
+      ],
+      [
+        20,
+        0
+      ],
+      [
+        20,
+        7
+      ],
+      [
+        12,
+        7
+      ],
+      [
+        12,
+        14
+      ],
+      [
+        0,
+        14
+      ]
+    ],
+    "closed": true,
+    "manual_ridges": []
+  },
+  "attic": {
+    "material": "Кирпичный",
+    "preset": "Кирпич 510 мм",
+    "wall_mm": 510,
+    "wall_above_slag_mm": 400,
+    "section_cut_x_m": 4,
+    "shaft_catalog": [
+      {
+        "id": "vsh1",
+        "code": "ВШ1",
+        "construction": "Сборная",
+        "width_mm": 500,
+        "length_mm": 500,
+        "wall_mm": 60,
+        "insulation_mm": 50,
+        "above_roof_mm": 800,
+        "insulate_attic": true,
+        "note": "Пример"
+      },
+      {
+        "id": "vsh2",
+        "code": "ВШ2",
+        "construction": "Железобетонная",
+        "width_mm": 300,
+        "length_mm": 1100,
+        "wall_mm": 80,
+        "insulation_mm": 50,
+        "above_roof_mm": 800,
+        "insulate_attic": true,
+        "note": "Пример"
+      }
+    ],
+    "shaft_instances": [
+      {
+        "type_id": "vsh1",
+        "x": 4,
+        "y": 3,
+        "rotation": 0
+      },
+      {
+        "type_id": "vsh2",
+        "x": 7,
+        "y": 10,
+        "rotation": 90
+      }
+    ]
+  }
+}
